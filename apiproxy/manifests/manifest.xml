@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<Manifest name="manifest">
+    <Policies>
+        <VersionInfo resourceName="AssignMessage.LamabdaList" version="SHA-512:38aeed59ebbed20f6a3937e11ddcaa64843d5bd39b3b4214b0e83cb861aac793d60f6103d7fe70c029576e09dc46619b9536459b5b4a0068cd61d04cfa835704"/>
+        <VersionInfo resourceName="AssignMessage.LambdaInvoke" version="SHA-512:c7a7386f44024886e79d51ee3786b44808459421829480eb53a34fb264bce909cdda29264fba913104eb3262902de222c65e2191af9bc43b5b06ab7761967283"/>
+        <VersionInfo resourceName="AssignMessage.SetResponse" version="SHA-512:c9cd2d5cb28c48093afab19cb62fba6a343ce873f9b732af6053dc8deb309e4d81fdfc7ad34ba195f47566c13f2883109942a74e6e7991ae2d7b173916190776"/>
+        <VersionInfo resourceName="JavaCallout.AWSSignature" version="SHA-512:946559322a2a15987ddfd4788e5cdc53a780b6af59e9d9ce2895763f66223e55e850b88ba959f7f5f70e2b573d94385f1c48cb1b14305f5a33d662bb94ef6b18"/>
+        <VersionInfo resourceName="KeyValueMap.LambdaParams" version="SHA-512:04bb96f79a2f725852c43e3b38524b1dbdab52a5bdff0f81442c0d39fc865185869c81cde41d23263acbbf00c881e0d37b521c7e418daa3b88b4959e11c6ebc2"/>
+        <VersionInfo resourceName="ServiceCallout.InvokeLambda" version="SHA-512:a2e3b81e8c8a32bd543e257f5f1b967a93badfae8835bd55d81be117b0a7f0d6339146a33aeb45b56c010f3e6e0db9a1cc845a8a75a03d52a7358c83dbbc8652"/>
+    </Policies>
+    <ProxyEndpoints>
+        <VersionInfo resourceName="default" version="SHA-512:2b95c4a756ff66afef54755ea72e817f0bfcded077d00756153de4223c6d4a0cf01805d6db0654906fc747ca1399c43e29c34b8aad1e48ce20cb400fb17582a6"/>
+    </ProxyEndpoints>
+    <Resources>
+        <VersionInfo resourceName="java://edge-callout-aws-signature-v4.jar" version="SHA-512:67149eb9fb9584be130a1be39f067136997f878257dc60ff5387b0d61abedaa731217c47182505898cbf0604f020d3b37241b8c2a01e2c4e47eca13aeae43cbc"/>
+    </Resources>
+    <SharedFlows/>
+    <TargetEndpoints/>
+</Manifest>

@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<APIProxy revision="3" name="aws-lambda-java">
+    <Basepaths>/v1/s3-sample</Basepaths>
+    <ConfigurationVersion majorVersion="4" minorVersion="0"/>
+    <CreatedAt>1592408885507</CreatedAt>
+    <CreatedBy>defaultUser</CreatedBy>
+    <Description></Description>
+    <DisplayName>apigee-s3-sample-apiproxy</DisplayName>
+    <LastModifiedAt>1592412763773</LastModifiedAt>
+    <LastModifiedBy>defaultUser</LastModifiedBy>
+    <ManifestVersion>SHA-512:dca28c6d0cb6216650cd6f06751ccef2895b17ac28ebbb62183c5af6fd9d7f8d1b0f2e1e62eed69c3b6164c24b3c0503d5b5b89a285a3c5fee7b37a3f042d638</ManifestVersion>
+    <Policies>
+        <Policy>AssignMessage.LamabdaList</Policy>
+        <Policy>AssignMessage.LambdaInvoke</Policy>
+        <Policy>AssignMessage.SetResponse</Policy>
+        <Policy>JavaCallout.AWSSignature</Policy>
+        <Policy>KeyValueMap.LambdaParams</Policy>
+        <Policy>ServiceCallout.InvokeLambda</Policy>
+    </Policies>
+    <ProxyEndpoints>
+        <ProxyEndpoint>default</ProxyEndpoint>
+    </ProxyEndpoints>
+    <Resources>
+        <Resource>java://edge-callout-aws-signature-v4.jar</Resource>
+    </Resources>
+    <Spec></Spec>
+    <TargetServers/>
+    <TargetEndpoints/>
+</APIProxy>

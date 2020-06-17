@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<JavaCallout async="false" continueOnError="false" enabled="true" name="JavaCallout.AWSSignature">
+    <DisplayName>JavaCallout.AWSSignature</DisplayName>
+    <Properties/>
+    <Properties>
+        <Property name="debug">true</Property>
+        <Property name="service">{aws-service-name}</Property>
+        <Property name="endpoint">https://{aws-service-endpoint}</Property>
+        <Property name="region">{aws-region}</Property>
+        <Property name="key">{private.aws-key}</Property>
+        <Property name="secret">{private.aws-secret-key}</Property>
+        <Property name="message-variable-ref">awsCallout</Property>
+    </Properties>
+    <ClassName>com.google.apigee.edgecallouts.AWSSignatureV4Callout</ClassName>
+    <ResourceURL>java://edge-callout-aws-signature-v4.jar</ResourceURL>
+</JavaCallout>

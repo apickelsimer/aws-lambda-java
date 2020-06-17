@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<AssignMessage async="false" continueOnError="false" enabled="true" name="AssignMessage.LambdaInvoke">
+    <DisplayName>AssignMessage.LambdaInvoke</DisplayName>
+    <Properties/>
+    <AssignVariable>
+        <Name>aws-service-name</Name>
+        <Value>lambda</Value>
+    </AssignVariable>
+    <AssignVariable>
+        <Name>aws-region</Name>
+        <Value>us-east-2</Value>
+        <!--<Value>request.queryparam.region</Value>-->
+        <!--parameterize your AWS region with a query string-->
+    </AssignVariable>
+    <AssignVariable>
+        <Name>function</Name>
+        <Value>helloWorld</Value>
+        <!--<Value>request.queryparam.function</Value>-->
+        <!--parameterize your lambda function name with a query string-->
+    </AssignVariable>
+    <AssignVariable>
+        <Name>aws-service-endpoint</Name>
+        <Value>lambda.us-east-2.amazonaws.com</Value>
+    </AssignVariable>
+    <AssignVariable>
+        <Name>private.aws-key</Name>
+        <Value>AKIAS......W4OSV</Value>
+    </AssignVariable>
+    <AssignVariable>
+        <Name>private.aws-secret-key</Name>
+        <Value>ea+unm6YBWk........f6bcUJnPzZeJ</Value>
+    </AssignVariable>
+    <Set>
+        <Verb>POST</Verb>
+        <Path>/2015-03-31/functions/{function}/invocations</Path>
+        <Headers>
+            <Header name="content-type">application/json</Header>
+        </Headers>
+        <Payload>{request.content}</Payload>
+    </Set>
+    <IgnoreUnresolvedVariables>true</IgnoreUnresolvedVariables>
+    <AssignTo createNew="new" transport="http" type="request">awsCallout</AssignTo>
+</AssignMessage>

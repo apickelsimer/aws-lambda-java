@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<AssignMessage async="false" continueOnError="false" enabled="true" name="AssignMessage.LamabdaList">
+    <DisplayName>AssignMessage.LamabdaList</DisplayName>
+    <Properties/>
+    <AssignVariable>
+        <Name>aws-service-name</Name>
+        <Value>lambda</Value>
+    </AssignVariable>
+    <AssignVariable>
+        <Name>aws-region</Name>
+        <Value>us-east-2</Value>
+    </AssignVariable>
+    <AssignVariable>
+        <Name>function</Name>
+        <Value>helloWorld</Value>
+    </AssignVariable>
+    <AssignVariable>
+        <Name>aws-service-endpoint</Name>
+        <Value>lambda.us-east-2.amazonaws.com</Value>
+    </AssignVariable>
+    <AssignVariable>
+        <Name>private.aws-key</Name>
+        <Value>AKIA......3TOJA</Value>
+    </AssignVariable>
+    <AssignVariable>
+        <Name>private.aws-secret-key</Name>
+        <Value>cBqKFPQxB.......ytLp/gqHD6</Value>
+    </AssignVariable>
+    <Set>
+        <Verb>GET</Verb>
+        <Path>/2015-03-31/functions</Path>
+        <QueryParams>
+            <!--<QueryParam name="FunctionVersion">ALL</QueryParam>
+            <QueryParam name="Marker">String</QueryParam>
+            <QueryParam name="MasterRegion">us-east-2</QueryParam>-->
+            <QueryParam name="MaxItems">50</QueryParam>
+        </QueryParams>
+        <Headers>
+            <Header name="content-type">application/json</Header>
+        </Headers>
+    </Set>
+    <IgnoreUnresolvedVariables>true</IgnoreUnresolvedVariables>
+    <AssignTo createNew="new" transport="http" type="request">awsCallout</AssignTo>
+</AssignMessage>

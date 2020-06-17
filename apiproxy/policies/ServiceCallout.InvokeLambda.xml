@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<ServiceCallout async="false" continueOnError="true" enabled="true" name="ServiceCallout.InvokeLambda">
+    <DisplayName>ServiceCallout.InvokeLambda</DisplayName>
+    <Properties/>
+    <Request clearPayload="false" variable="awsCallout">
+        <IgnoreUnresolvedVariables>false</IgnoreUnresolvedVariables>
+    </Request>
+    <Response>awsCalloutResponse</Response>
+    <HTTPTargetConnection>
+        <Properties/>
+        <URL>https://{aws-service-endpoint}</URL>
+    </HTTPTargetConnection>
+</ServiceCallout>
